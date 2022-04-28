@@ -1,0 +1,148 @@
+:root {
+    font-size: 15px;
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+    --very-light-gray: hsl(0, 0%, 95%)
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* Typography */
+
+p {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    color: var(--transparent-white);
+    line-height: 1.5;
+}
+
+h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    color: var(--very-light-gray);
+    text-transform: uppercase;
+}
+
+
+/* Section Styling */
+
+.card {
+    margin: 10vh auto;
+    width: 80%;
+    max-width: 500px;
+}
+
+.section_one {
+    background-color: var(--bright-orange);
+}
+
+.section_two {
+    background-color: var(--dark-cyan);
+}
+
+.section_three {
+    background-color: var(--very-dark-cyan);
+}
+
+.section_container {
+    padding: 2.5rem;
+}
+
+/* Layout */
+
+.section_icon,
+h1 {
+    padding-bottom: 1.8rem ;
+}
+
+
+/* button */
+
+.btn {
+    border: none;
+    padding: 1rem 2rem;
+    background-color: var(--very-light-gray);
+    border-radius: 3rem;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 1.7rem;
+    border: 1px solid rgba(255, 255, 255, 0);
+    text-transform: capitalize;
+}
+
+
+.btn:hover,
+.btn:focus {
+    background-color: rgba(255, 255, 255, 0);
+    color: var(--very-light-gray);
+    border: 1px solid var(--very-light-gray);
+}
+
+.section_one .btn {
+    color: var(--bright-orange);
+}
+
+.section_two .btn {
+    color: var(--dark-cyan);
+}
+
+.section_three .btn {
+    color: var(--very-dark-cyan);
+}
+
+.section_one {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.section_three {
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+
+/* Media query */
+
+
+@media (min-width: 1000px){
+    .flex {
+        display: flex;
+    }
+
+    .card {
+        max-width:1200px
+    }
+
+    section {
+        width: 100%;
+        height: auto;
+    }
+
+    p {
+        max-width: 69%;
+    }
+
+    .btn {
+        margin-top: 5rem;
+    }
+
+    .section_one {
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 12px;
+    }
+
+    .section_three {
+        border-top-right-radius: 12px;
+        border-bottom-left-radius: 0px;
+
+    }
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(80, 61%, 50%); }
