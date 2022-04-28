@@ -124,14 +124,14 @@ h1 {
         height: auto;
     }
 
-    p {
-        max-width: 69%;
-    }
-
     .btn {
         margin-top: 5rem;
     }
 
+    .btn:hover,
+    .btn:focus {
+        color: var(--very-light-gray);
+    }
     .section_one {
         border-top-right-radius: 0px;
         border-bottom-left-radius: 12px;
