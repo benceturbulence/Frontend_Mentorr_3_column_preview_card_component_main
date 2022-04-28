@@ -118,29 +118,34 @@ h1 {
     .card {
         max-width:1200px
     }
-
+    
     section {
-        width: 100%;
+        max-width: 280px;
         height: auto;
     }
-
-    .btn {
-        margin-top: 5rem;
+    
+    .section_container {
+        padding-top: 4rem;
     }
+    
+    .section_three {
+        border-top-right-radius: 12px;
+        border-bottom-left-radius: 0px;
+    }     
 
-    .btn:hover,
-    .btn:focus {
-        color: var(--very-light-gray);
-    }
     .section_one {
         border-top-right-radius: 0px;
         border-bottom-left-radius: 12px;
     }
 
-    .section_three {
-        border-top-right-radius: 12px;
-        border-bottom-left-radius: 0px;
 
+    .btn {
+        margin-top: 8rem;
+    }
+    
+    .btn:hover,
+    .btn:focus {
+        color: var(--very-light-gray);
     }
 }
 
